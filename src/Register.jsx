@@ -24,7 +24,7 @@ function Signup() {
       setErrorMessage('Passwords do not match');
       return;
     }
-    if (!email.includes('@')) {
+    if (!email.includes('@'&&'.')) {
       setErrorMessage('Invalid email format');
       return;
     }
